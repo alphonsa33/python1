@@ -1,12 +1,9 @@
-'''
-author=Alphonsa
-version=1.0
-Program to perform operations
-'''
-first_name=input("enter the first name")
-last_name=input("enter the last name")
-full_name=first_name+" "+last_name
-print(full_name)
-length=len(first_name)
-extracted_last_name=full_name[length+1:]
-print(extracted_last_name)
+def count_upper_lower_case_characters(input_string):
+    upper_characters=0
+    lower_characters=0
+    for character in input_string:
+        if character.isupper():
+            upper_characters+=1
+        elif character.islower():
+            lower_characters +=1
+    return upper_characters, lower_charcters
